@@ -34,3 +34,13 @@ export function stepActions(recipe){
   }
   return verbArray;
 }
+
+export function removeLastCharacters(str, numberOfCharacters){
+  if (numberOfCharacters < 0) {
+    return str;
+  } else if (numberOfCharacters > str.length) {
+    return '';
+  } else {
+    return str.slice(0, -numberOfCharacters);
+  }
+}
