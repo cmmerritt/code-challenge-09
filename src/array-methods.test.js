@@ -44,7 +44,7 @@ test('wordsToCharList should return a list of characters', () => {
   expect(wordsToCharList('')).toStrictEqual([]);
 });
 
-test.skip('listFoods should return array of ingredients without their amounts', () => {
+test('listFoods should return array of ingredients without their amounts', () => {
   expect(listFoods(gruffaloCrumble)).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
 });
 
