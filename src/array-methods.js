@@ -7,3 +7,8 @@ export function howMuchPencil(str) {
   }
   return result;
 }
+
+export function wordsToCharList(str) {
+  return Array.from(str);
+}
+
