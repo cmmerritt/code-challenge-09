@@ -22,3 +22,15 @@ export function listFoods(recipe) {
   }
   return shortFoodArray;
 }
+
+export function stepActions(recipe){
+  let verbArray = [];
+  let steps = recipe.steps;
+  for (let step of steps) {
+    let stepChunk = step.split("','");
+    let stepChunkStr = stepChunk.toString();
+    let stepChunkSep = stepChunkStr.split(' ').slice(0, 1);
+    verbArray.push(stepChunkSep.toString());
+  }
+  return verbArray;
+}
