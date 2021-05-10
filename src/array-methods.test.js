@@ -62,7 +62,7 @@ test('removeLastCharacters', () => {
 });
 
 // stretch goals
-test.skip('totalSumCSV', () => {
+test('totalSumCSV', () => {
   expect(totalSumCSV('1,4,5,7,2')).toStrictEqual(19);
   expect(totalSumCSV('147')).toStrictEqual(147);
 });
