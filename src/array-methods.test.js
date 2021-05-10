@@ -67,7 +67,7 @@ test('totalSumCSV', () => {
   expect(totalSumCSV('147')).toStrictEqual(147);
 });
 
-test.skip('removeVowels', () => {
+test('removeVowels', () => {
   expect(removeVowels('gregor')).toStrictEqual('grgr');
   expect(removeVowels('asdf')).toStrictEqual('sdf');
   expect(removeVowels('why')).toStrictEqual('why');
