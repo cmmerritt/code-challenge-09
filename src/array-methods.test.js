@@ -73,7 +73,7 @@ test('removeVowels', () => {
   expect(removeVowels('why')).toStrictEqual('why');
 });
 
-test.skip('extractVowels', () => {
+test('extractVowels', () => {
   expect(extractVowels('gregor')).toStrictEqual(['grgr', 'eo']);
   expect(extractVowels('The quick brown fox')).toStrictEqual(['Th qck brwn fx', 'eioou']);
 });

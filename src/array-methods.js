@@ -55,3 +55,13 @@ export function removeVowels(str){
   let map = arr.map(x => x.replace(/[aeiou]/g, ''));
   return map.toString();
 }
+
+export function extractVowels(str){
+  let arr = Array(str);
+  let map1 = arr.map(x => x.replace(/[aeiou]/g, ''));
+  let map2 = arr.map(x => x.replace(/[^aeiou]/g, ''));
+  let vowelArr = Array.from(map2.toString());
+  let vowelsSorted = vowelArr.sort();
+  let vowelsSortedStr = vowelsSorted.join('');
+  return [map1.toString(), vowelsSortedStr];
+}
